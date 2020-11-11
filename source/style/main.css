@@ -874,6 +874,25 @@ template {
   opacity: 0.7;
 }
 
+.course-description .benefits {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.course-description .benefits::before {
+  content: url(../img/main/benefits-bg.svg);
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 1;
+}
+
 .course-description .benefits__title {
   font-weight: 600;
   font-size: calc(52px + .1vw);
@@ -881,12 +900,11 @@ template {
   text-align: center;
   letter-spacing: 0.15px;
   color: #B2CCFF;
-  padding-top: 101px;
+  padding-top: 120px;
   padding-bottom: 48px;
 }
 
 .course-description .benefits__cards {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,15 +913,15 @@ template {
   padding-left: calc(28px + .1vw);
 }
 
-.course-description .benefits__cards::before {
-  content: url(../img/main/benefits-bg.svg);
-  position: absolute;
-  bottom: 90%;
-  left: 0;
-  z-index: 1;
+@media (max-width: 768px) {
+  .course-description .benefits__cards {
+    display: -webkit-box;
+    overflow: scroll;
+  }
 }
 
 .course-description .benefits__card {
+  position: relative;
   z-index: 2;
   max-width: 354px;
   width: 31%;
@@ -911,6 +929,14 @@ template {
   padding: 1.5em 2em .5em 1.2em;
   background: linear-gradient(169.66deg, #293957 17.2%, rgba(24, 31, 47, 0) 124.89%);
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .course-description .benefits__card {
+    width: 289px;
+    height: 464px;
+    margin-right: 12px;
+  }
 }
 
 .course-description .benefits .card__title {
