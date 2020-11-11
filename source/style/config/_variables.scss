@@ -1,0 +1,23 @@
+$primary-font: 'Lato', sans-serif;
+$logo-font: 'Russo One', sans-serif;
+$arrow-right: rotate(-45deg);
+$arrow-left: rotate(135deg);
+$arrow-top: rotate(-135deg);
+$arrow-bottom: rotate(45deg);
+ 
+
+
+// Small  smartphones (landscape view)
+$screen-xm-max: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Large tablets and desktops
+$screen-xl-max: 1200px;

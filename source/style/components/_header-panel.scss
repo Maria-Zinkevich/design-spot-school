@@ -1,0 +1,267 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 1px 40px 1px 40px;
+
+	background-color: #010101;
+
+	@include md {
+		.navbar__item {
+			width: 4.6em;
+		}
+	}
+
+	@include sm {
+        .navbar__burger-menu {
+            display: block;
+		}
+
+		.navbar__list {
+			display: none;
+		}
+	}
+
+	@include xm {
+        .navbar__burger-menu {
+            display: block;
+		}
+		
+		.navbar__list {
+			display: none;
+		}
+    }
+
+	&__burger-menu {
+		display: none;
+		position: relative;
+		top: 11px;
+		width: 30px;
+		height: 4px;
+		background: #ffffff;
+	}
+
+	&__burger-menu::before {
+		content: "";
+		position: absolute;
+		width: 30px;
+		height: 4px;
+	   	top: 20px;
+	   	background: #ffffff;
+	}
+	  
+	&__burger-menu::after {
+		content: "";
+		position: absolute;
+		width: 30px;
+		height: 4px;
+		top: 10px;
+		background: #ffffff;
+	}
+
+	&__burger-menu:hover,
+	&__burger-menu:hover:before,
+	&__burger-menu:hover:after {
+		background-color: #61FFD9;
+	}
+
+	&__logo {
+		font-family: $logo-font;
+		font-size: calc(14px + .1vw);
+		color: #ffffff;
+
+		span {
+			display: inline-block;
+			width: 1em;
+			padding: 15px 0 15px 0;
+
+			border-left: 1px solid #ffffff;
+		}
+
+		span:last-child {
+			border-right: 1px solid #ffffff;
+		}
+
+		span:hover {
+			color: #61FFD9;
+			border-color: #61FFD9;
+		}
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		@include text-style (400, 1em, 22px, center, 0.15px, #ffffff);
+
+		width: 6.6em;
+		height: 21px;
+		padding: 12px 0 11px 0;
+	}
+
+	&__item:hover {
+		color: #61FFD9;
+		border-bottom: 2px solid #61FFD9;
+	}
+}
+
+.header {
+	display: flex;
+
+	@include md {
+		flex-direction: column;
+
+		.header__title {
+			font-size: 5.2em;
+		}
+
+		.header__info,
+		.header__media {
+			width: 100%;
+		}
+
+		.header__media-img {
+			height: 517px;
+		}
+
+		.header__stage,
+		.header__period {
+			padding-right: 3.6em;
+		}
+
+		.header__description {
+			padding-bottom: 1.3em;
+		}
+
+		.header__btn {
+			margin-bottom: 108px;
+		}
+
+		.header__media-btn {
+			bottom: 300px;
+			left: 45%;
+		}
+	}
+
+	@include sm {
+		.header__title {
+			font-size: 4em;
+		}
+
+		.header__description {
+			font-size: 2em;
+		}
+	}
+
+	@include xm {
+		.header__title {
+			font-size: 2.2em;
+		}
+
+		.header__description {
+			font-size: 1.2em;
+		}
+	}
+
+	&__info {
+		width: 50%;
+	}
+
+	&__title {
+		@include text-style (400, 5.8em, 119px, left, -1.5px, #ffffff);
+
+		position: relative;
+		padding-left: calc(28px + .1vw);
+		margin: calc(62px + .1vw) 0 calc(40px + .1vw) 0;
+
+		background: url(../img/header/title-background.svg) no-repeat;
+		background-size: 12% 70%;
+	   
+		@include md {
+			padding-left: calc(14px + .1vw);
+			background-size: 9% 70%;
+		}
+	}
+
+	&__stage {
+		@include text-style (400, calc(16px + .1vw), 24px, right, 0.25px, #BABCC1);
+
+		padding-right: 6.6em;
+	}
+
+	&__period {
+		@include text-style (500, calc(16px + .1vw), 24px, right, 0.25px, #DCDDE0);
+
+		padding-right: 6.6em;
+	}
+
+	&__description {
+		@include text-style (400, calc(36px + .1vw), 45px, left, 0.15px, #ffffff);
+
+		display: flex;
+		flex-direction: column;
+		padding: 3em 0 1.6em calc(28px + .1vw);
+	}
+
+	&__btn {
+		@include button-enroll;
+
+		@include sm {
+			padding: 1em 5.4em;
+		}
+
+		@include xm {
+			padding: 1em 5.4em;
+		}
+	}
+
+	&__media {
+		width: 50%;
+	}
+
+	&__media-img {
+		width: 100%;
+		height: 723px;
+		object-fit: cover;
+	}
+
+	&__media-btn {
+		position: relative;
+		bottom: 50%;
+		left: 50%;
+		padding: 10px;
+		border: 0.5px solid #ECEAEA;
+		display: inline-block;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	&__media-play {
+		position: relative;
+		top: 1px;
+
+		display: inline-block;
+		padding: 25px;
+
+		text-align: center;
+		color: white;
+		
+		border: 2px solid #ECEAEA;
+		border-radius: 50%;
+		
+		cursor: pointer;
+
+		&::after {
+			content: "";
+	
+			position: absolute;
+			right: 13px;
+			top: 15px;
+	
+			border-top: 10px solid transparent;
+			border-left: 20px solid #ECEAEA;
+			border-bottom: 10px solid transparent;
+		}
+	}	
+}
+

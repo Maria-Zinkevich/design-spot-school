@@ -1,0 +1,135 @@
+@mixin xm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+} 
+ 
+ // Small devices
+  
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+// Medium devices
+
+@mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+// Large devices
+
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+// Extra large devices
+
+@mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+}
+
+// Text
+
+@mixin text-style ($font-weight, $font-size, $line-height, $text-align, $letter-spacing, $color) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: $text-align;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+@mixin header-text ($font-weight, $color) {
+    padding-right: 6.6em;
+    font-weight: $font-weight;
+    font-size: calc(16px + .1vw);
+    line-height: 24px;
+    text-align: right;
+    color: $color;
+}
+
+@mixin main-title {
+    font-weight: 600;
+    font-size: 52px;
+    text-align: left;
+    line-height: 62px;
+    letter-spacing: 0.15px;
+    color: #B2CCFF;
+}
+
+@mixin weight-size-color ($font-weight, $font-size, $color) {
+    font-weight: $font-weight;
+	font-size: $font-size;
+	color: $color;
+}
+
+
+// Button enroll
+
+@mixin button-enroll {
+    background-color: #004DE1;
+	border: none;
+	color: #ffffff;
+	padding: 1em 9.4em;
+	margin: 0 calc(28px + .1vw);
+		
+	text-align: center;
+	text-decoration: none;
+	line-height: 24px;
+	font-weight: 700;
+	font-size: calc(16px + .1vw);
+	cursor: pointer;
+}
+
+// Button program
+
+@mixin button-program {
+    background-color: transparent;
+	border: 1.5px solid #61FFD9;
+    border-radius: 5px;
+	color: #61FFD9;
+    padding: 1em 7em;
+    margin-top: 24px;
+		
+	text-align: center;
+	text-decoration: none;
+	line-height: 24px;
+	font-weight: 500;
+	font-size: calc(18px + .1vw);
+	cursor: pointer;
+}
+
+
+// List marker
+
+@mixin marker ($color) {
+    content: "";
+    background: $color;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+// Arrows 
+
+
+@mixin arrow ($color, $direction) {
+    border: 1px solid $color;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: $direction;
+}
+  
+ 

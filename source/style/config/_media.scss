@@ -1,0 +1,27 @@
+@media (min-width: 769px) and (max-width: 1175px) {
+	.header__title {
+		font-size: 4.2em;
+	}
+
+	.header__description {
+		font-size: calc(30px + .1vw);
+	}
+
+	.header__btn {
+		padding: 1em 5.4em;
+	}
+
+	.mentors__slide {
+		padding: 1em;
+	}
+
+	.mentors__slider-text {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 575px) and (max-width: 690px) {
+	.header__title {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,1576 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+* {
+  margin: 0;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif, Arial, Helvetica, sans-serif;
+  background-color: #1C2539;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1px 40px 1px 40px;
+  background-color: #010101;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar__item {
+    width: 4.6em;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar__burger-menu {
+    display: block;
+  }
+  .navbar .navbar__list {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar__burger-menu {
+    display: block;
+  }
+  .navbar .navbar__list {
+    display: none;
+  }
+}
+
+.navbar__burger-menu {
+  display: none;
+  position: relative;
+  top: 11px;
+  width: 30px;
+  height: 4px;
+  background: #ffffff;
+}
+
+.navbar__burger-menu::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  top: 20px;
+  background: #ffffff;
+}
+
+.navbar__burger-menu::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  top: 10px;
+  background: #ffffff;
+}
+
+.navbar__burger-menu:hover, .navbar__burger-menu:hover:before, .navbar__burger-menu:hover:after {
+  background-color: #61FFD9;
+}
+
+.navbar__logo {
+  font-family: "Russo One", sans-serif;
+  font-size: calc(14px + .1vw);
+  color: #ffffff;
+}
+
+.navbar__logo span {
+  display: inline-block;
+  width: 1em;
+  padding: 15px 0 15px 0;
+  border-left: 1px solid #ffffff;
+}
+
+.navbar__logo span:last-child {
+  border-right: 1px solid #ffffff;
+}
+
+.navbar__logo span:hover {
+  color: #61FFD9;
+  border-color: #61FFD9;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__item {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  width: 6.6em;
+  height: 21px;
+  padding: 12px 0 11px 0;
+}
+
+.navbar__item:hover {
+  color: #61FFD9;
+  border-bottom: 2px solid #61FFD9;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header__title {
+    font-size: 5.2em;
+  }
+  .header .header__info,
+  .header .header__media {
+    width: 100%;
+  }
+  .header .header__media-img {
+    height: 517px;
+  }
+  .header .header__stage,
+  .header .header__period {
+    padding-right: 3.6em;
+  }
+  .header .header__description {
+    padding-bottom: 1.3em;
+  }
+  .header .header__btn {
+    margin-bottom: 108px;
+  }
+  .header .header__media-btn {
+    bottom: 300px;
+    left: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .header__title {
+    font-size: 4em;
+  }
+  .header .header__description {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .header__title {
+    font-size: 2.2em;
+  }
+  .header .header__description {
+    font-size: 1.2em;
+  }
+}
+
+.header__info {
+  width: 50%;
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: 5.8em;
+  line-height: 119px;
+  text-align: left;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  position: relative;
+  padding-left: calc(28px + .1vw);
+  margin: calc(62px + .1vw) 0 calc(40px + .1vw) 0;
+  background: url(../img/header/title-background.svg) no-repeat;
+  background-size: 12% 70%;
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    padding-left: calc(14px + .1vw);
+    background-size: 9% 70%;
+  }
+}
+
+.header__stage {
+  font-weight: 400;
+  font-size: calc(16px + .1vw);
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.25px;
+  color: #BABCC1;
+  padding-right: 6.6em;
+}
+
+.header__period {
+  font-weight: 500;
+  font-size: calc(16px + .1vw);
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.25px;
+  color: #DCDDE0;
+  padding-right: 6.6em;
+}
+
+.header__description {
+  font-weight: 400;
+  font-size: calc(36px + .1vw);
+  line-height: 45px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em 0 1.6em calc(28px + .1vw);
+}
+
+.header__btn {
+  background-color: #004DE1;
+  border: none;
+  color: #ffffff;
+  padding: 1em 9.4em;
+  margin: 0 calc(28px + .1vw);
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: calc(16px + .1vw);
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .header__btn {
+    padding: 1em 5.4em;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__btn {
+    padding: 1em 5.4em;
+  }
+}
+
+.header__media {
+  width: 50%;
+}
+
+.header__media-img {
+  width: 100%;
+  height: 723px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__media-btn {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  padding: 10px;
+  border: 0.5px solid #ECEAEA;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header__media-play {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  border: 2px solid #ECEAEA;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header__media-play::after {
+  content: "";
+  position: absolute;
+  right: 13px;
+  top: 15px;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #ECEAEA;
+  border-bottom: 10px solid transparent;
+}
+
+.about-us {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-us .mentors {
+  max-width: 820px;
+  width: 60%;
+}
+
+.about-us .mentors__title {
+  font-weight: 600;
+  font-size: calc(52px + .1vw);
+  line-height: 62px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #B2CCFF;
+  padding-left: calc(28px + .1vw);
+}
+
+.about-us .mentors__subtitle {
+  max-width: 620px;
+  padding: 48px 0 24px 0;
+  padding-left: calc(28px + .1vw);
+  font-weight: 300;
+  font-size: calc(24px + .1vw);
+  color: #BABCC1;
+}
+
+.about-us .mentors__subtitle span {
+  font-weight: 700;
+  font-size: calc(24px + .1vw);
+  color: #ffffff;
+}
+
+.about-us .mentors__slider {
+  position: relative;
+}
+
+.about-us .mentors__slider .mentors__arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.about-us .mentors__slider .mentors__arrow--left {
+  border: 1px solid #BABCC1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  left: 1%;
+}
+
+.about-us .mentors__slider .mentors__arrow--right {
+  border: 1px solid #BABCC1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 96%;
+}
+
+.about-us .mentors__slider .mentors__slider-amount {
+  font-weight: 400;
+  font-size: calc(16px + .1vw);
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 0.15px;
+  color: #61FFD9;
+  padding-right: 2em;
+  padding-bottom: 8px;
+}
+
+.about-us .mentors__slider .mentors__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 679px;
+  width: 100%;
+  height: 296px;
+  padding: 1.9em 2.3em 3.5em 2.5em;
+  margin-left: calc(28px + .1vw);
+  margin-right: calc(28px + .1vw);
+  background: linear-gradient(256.52deg, #293957 57.28%, rgba(24, 31, 47, 0) 126.96%);
+  border-radius: 4px;
+}
+
+.about-us .mentors__slider .mentors__slide .mentors__avatar {
+  width: 35%;
+  height: 249px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-us .mentors__slider .mentors__slide .mentors__slide-info {
+  width: 60%;
+}
+
+.about-us .mentors__slider .mentors__slide .mentors__slide-title {
+  font-weight: 600;
+  font-size: calc(24px + .1vw);
+  line-height: 28px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+
+.about-us .mentors__slider .mentors__slide .mentors__slide-subtitle {
+  font-weight: 400;
+  font-size: calc(16px + .1vw);
+  line-height: 19px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #61FFD9;
+  padding-top: 4px;
+  padding-bottom: 16px;
+}
+
+.about-us .mentors__slider .mentors__slide .mentors__slide-text {
+  font-weight: 400;
+  font-size: calc(15px + .1vw);
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #DCDDE0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0.8;
+}
+
+.about-us .students {
+  max-width: 458px;
+  width: 40%;
+}
+
+.about-us .students::before {
+  content: url(../img/main/about-us-bg.svg);
+  position: absolute;
+  bottom: 73%;
+  right: 0;
+}
+
+.about-us .students__title {
+  font-weight: 600;
+  font-size: calc(52px + .1vw);
+  line-height: 62px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #B2CCFF;
+  padding-left: calc(28px + .1vw);
+}
+
+.about-us .students__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 418px;
+  width: 80%;
+  height: 380px;
+  padding-top: 7em;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-us .students__item-title {
+  font-weight: 400;
+  font-size: calc(15px + .1vw);
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.about-us .students__item-title::before {
+  content: "";
+  background: #61FFD9;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.about-us .students__item-text {
+  font-weight: 400;
+  font-size: calc(13px + .1vw);
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding-left: .5em;
+  opacity: 0.7;
+}
+
+.course-description .benefits__title {
+  font-weight: 600;
+  font-size: calc(52px + .1vw);
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #B2CCFF;
+  padding-top: 101px;
+  padding-bottom: 48px;
+}
+
+.course-description .benefits__cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: calc(28px + .1vw);
+}
+
+.course-description .benefits__card {
+  max-width: 354px;
+  width: 31%;
+  height: 360px;
+  padding: 1.5em 2em .5em 1.2em;
+  background: linear-gradient(169.66deg, #293957 17.2%, rgba(24, 31, 47, 0) 124.89%);
+  border-radius: 4px;
+}
+
+.course-description .benefits__card::before {
+  content: url(../img/main/benefits-bg.svg);
+  position: absolute;
+  bottom: 90%;
+  left: 0;
+}
+
+.course-description .benefits .card__title {
+  font-weight: 600;
+  font-size: calc(22px + .1vw);
+  line-height: 29px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding-bottom: 32px;
+  opacity: 0.8;
+}
+
+.course-description .benefits .card__title--first-card {
+  padding-bottom: 8px;
+}
+
+.course-description .benefits .card__subtitle {
+  font-weight: 600;
+  font-size: calc(14px + .1vw);
+  line-height: 19px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  opacity: 0.7;
+}
+
+.course-description .benefits .card__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.course-description .benefits .card__item {
+  font-weight: 400;
+  font-size: calc(14px + .1vw);
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.course-description .benefits .card__item::before {
+  content: "";
+  background: #64B5F6;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.course-description .chat-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-description .chat-box__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 88px;
+  padding-bottom: 32px;
+  font-weight: 400;
+  font-size: calc(20px + .1vw);
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.course-description .chat-box__btn {
+  width: 210px;
+  height: 60px;
+  background: url(../img/main/telegram-btn.svg) no-repeat;
+  background-size: 210px 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.course-description .terms-box {
+  position: relative;
+}
+
+.course-description .terms-box__title {
+  font-weight: 600;
+  font-size: calc(52px + .1vw);
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #B2CCFF;
+  padding-top: 101px;
+  padding-bottom: 48px;
+}
+
+.course-description .terms-box__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1271px;
+  width: 93%;
+  padding-left: calc(95px + .1vw);
+}
+
+.course-description .terms-box__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 517px;
+  width: 40%;
+  margin-top: 84px;
+}
+
+.course-description .terms-box__info::before {
+  content: url(../img/main/terms-box-bg.svg);
+  position: absolute;
+  bottom: 47%;
+  left: 0;
+}
+
+.course-description .terms-box__text {
+  padding-bottom: 34px;
+}
+
+.course-description .terms-box__text h4 {
+  font-weight: 400;
+  font-size: calc(32px + .1vw);
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.course-description .terms-box__text p {
+  font-weight: 400;
+  font-size: calc(22px + .1vw);
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.course-description .terms-box__btn {
+  background-color: #004DE1;
+  border: none;
+  color: #ffffff;
+  padding: 1em 9.4em;
+  margin: 0 calc(28px + .1vw);
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: calc(16px + .1vw);
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .course-description .terms-box__btn {
+    padding: 1em 5.4em;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-description .terms-box__btn {
+    padding: 1em 5.4em;
+  }
+}
+
+.course-description .terms-box__btn-program {
+  background-color: transparent;
+  border: 1.5px solid #61FFD9;
+  border-radius: 5px;
+  color: #61FFD9;
+  padding: 1em 7em;
+  margin-top: 24px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: calc(18px + .1vw);
+  cursor: pointer;
+}
+
+.course-description .terms-box__media {
+  max-width: 683px;
+  width: 60%;
+}
+
+.course-description .terms-box__media-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.course-description .terms-box__media-btn {
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  padding: 10px;
+  border: 0.5px solid #ECEAEA;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.course-description .terms-box__media-play {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  border: 2px solid #ECEAEA;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.course-description .terms-box__media-play::after {
+  content: "";
+  position: absolute;
+  right: 13px;
+  top: 15px;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #ECEAEA;
+  border-bottom: 10px solid transparent;
+}
+
+.reviews {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .reviews .reviews {
+    padding-right: 0;
+  }
+  .reviews .reviews__sliders {
+    overflow: scroll;
+    padding: 0 0 0 24px;
+  }
+  .reviews .reviews__slide {
+    min-width: 306px;
+    width: 31%;
+    margin-right: 12px;
+    padding: 20px;
+  }
+  .reviews .reviews__arrow {
+    display: none;
+  }
+}
+
+.reviews__title {
+  font-weight: 600;
+  font-size: calc(52px + .1vw);
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #B2CCFF;
+  padding-top: 118px;
+  padding-bottom: 48px;
+}
+
+.reviews__slider-amount {
+  font-weight: 400;
+  font-size: calc(14px + .1vw);
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 0.15px;
+  color: #61FFD9;
+  padding-right: 3%;
+  padding-bottom: 8px;
+}
+
+.reviews__sliders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+}
+
+.reviews__slide {
+  max-width: 390px;
+  width: 31%;
+  height: 242px;
+  padding: 24px 14px 14px 24px;
+  background: linear-gradient(244.65deg, #293957 58.88%, rgba(24, 31, 47, 0) 157.64%);
+  border-radius: 4px;
+}
+
+.reviews__slide-title {
+  font-weight: 600;
+  font-size: calc(22px + .1vw);
+  line-height: 28px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding-bottom: 8px;
+}
+
+.reviews__slide-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.reviews__slide-box p {
+  font-weight: 400;
+  font-size: calc(14px + .1vw);
+  line-height: 19px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #B2CCFF;
+}
+
+.reviews__slide-text {
+  font-weight: 400;
+  font-size: calc(14px + .1vw);
+  line-height: 19px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.reviews__arrow {
+  position: absolute;
+  top: 54%;
+  cursor: pointer;
+}
+
+.reviews__arrow--left {
+  border: 1px solid #BABCC1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  left: 1%;
+}
+
+.reviews__arrow--right {
+  border: 1px solid #BABCC1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 1%;
+}
+
+.reviews__question {
+  font-weight: 400;
+  font-size: calc(18px + .1vw);
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-left: calc(30px + .1vw);
+}
+
+.reviews__btn {
+  width: 210px;
+  height: 60px;
+  padding-bottom: 92px;
+  margin-left: calc(30px + .1vw);
+  background: url(../img/main/reviews-btn.svg) no-repeat;
+  background-size: 210px 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.questions {
+  padding: 0 32px;
+  position: relative;
+}
+
+.questions__title {
+  font-weight: 600;
+  font-size: calc(52px + .1vw);
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #B2CCFF;
+  padding-bottom: 48px;
+}
+
+.questions__list {
+  padding-left: 0;
+  margin-bottom: 149px;
+}
+
+.questions__list::after {
+  content: url(../img/main/questions-bg.svg);
+  position: absolute;
+  top: 7%;
+  right: .5%;
+}
+
+.questions__item {
+  position: relative;
+  max-width: 1302px;
+  padding: 16px 32px 0;
+  margin-bottom: 1em;
+  background: linear-gradient(91.01deg, #293957 42.2%, rgba(24, 31, 47, 0) 134.63%);
+  border-radius: 4px;
+  list-style: none;
+}
+
+.questions__box {
+  display: none;
+}
+
+.questions__box + label {
+  display: block;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+
+.questions__box + label::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #B2CCFF;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 32px;
+  cursor: pointer;
+}
+
+.questions__box + label + p {
+  display: none;
+  padding-bottom: 15px;
+}
+
+.questions__box:checked + label + p {
+  display: block;
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #DCDDE0;
+  border-top: 1px solid #FFFFFF;
+}
+
+.questions__box:checked + label::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #B2CCFF;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  right: 32px;
+  cursor: pointer;
+}
+
+.enroll-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enroll-box__subtitle {
+  font-weight: 300;
+  font-size: calc(22px + .1vw);
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 22px;
+  margin-bottom: 56px;
+}
+
+.enroll-box__btn {
+  background-color: #004DE1;
+  border: none;
+  color: #ffffff;
+  padding: 1em 9.4em;
+  margin: 0 calc(28px + .1vw);
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: calc(16px + .1vw);
+  cursor: pointer;
+  max-width: 428px;
+  margin: 0 0 164px 0;
+}
+
+.footer {
+  height: 89px;
+  padding: 0 2em;
+}
+
+@media (max-width: 768px) {
+  .footer .footer__link {
+    display: none;
+  }
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #61FFD9;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 541px;
+  width: 41%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+}
+
+.footer__link {
+  display: block;
+  font-weight: 500;
+  font-size: calc(14px + .1vw);
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  color: #61FFD9;
+  padding-left: 8px;
+}
+
+.footer__link--medium {
+  height: 19px;
+}
+
+.footer__link--facebook {
+  width: 12px;
+  height: 24px;
+}
+
+.footer__link--community-z {
+  width: 22px;
+  height: 22px;
+}
+
+.footer__link--telegram {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__btn-program {
+  background-color: transparent;
+  border: 1.5px solid #61FFD9;
+  border-radius: 5px;
+  color: #61FFD9;
+  padding: 1em 7em;
+  margin-top: 24px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: calc(18px + .1vw);
+  cursor: pointer;
+  padding: .6em 1.2em;
+  margin-top: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1175px) {
+  .header__title {
+    font-size: 4.2em;
+  }
+  .header__description {
+    font-size: calc(30px + .1vw);
+  }
+  .header__btn {
+    padding: 1em 5.4em;
+  }
+  .mentors__slide {
+    padding: 1em;
+  }
+  .mentors__slider-text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 690px) {
+  .header__title {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

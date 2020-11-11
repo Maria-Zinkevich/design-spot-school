@@ -1,0 +1,585 @@
+.about-us {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.mentors {
+		max-width: 820px;
+		width: 60%;
+
+		&__title {
+			@include text-style (600, calc(52px + .1vw), 62px, left, 0.15px, #B2CCFF);
+
+			padding-left: calc(28px + .1vw);
+		}
+
+		&__subtitle {
+			max-width: 620px;
+			padding: 48px 0 24px 0;
+			padding-left: calc(28px + .1vw);
+			@include weight-size-color (300, calc(24px + .1vw), #BABCC1);
+		}
+
+		&__subtitle span {
+			@include weight-size-color (700, calc(24px + .1vw), #ffffff);
+		}
+
+		&__slider {
+			position: relative;
+
+			.mentors__arrow {
+				position: absolute;
+				top: 50%;
+				
+				cursor: pointer
+			}
+
+			.mentors__arrow--left {
+				@include arrow (#BABCC1, $arrow-left);
+
+				left: 1%;
+			}
+
+			.mentors__arrow--right {
+				@include arrow (#BABCC1, $arrow-right);
+
+				left: 96%;
+			}
+
+			.mentors__slider-amount {
+				@include text-style (400, calc(16px + .1vw), 19px, right, 0.15px, #61FFD9);
+
+				padding-right: 2em;
+				padding-bottom: 8px;
+			}
+			
+			.mentors__slide {
+				display: flex;
+				justify-content: space-between;
+				max-width: 679px;
+				width: 100%;
+				height: 296px;
+				padding: 1.9em 2.3em 3.5em 2.5em;
+				// padding: 31px 37px 57px 40px;
+				margin-left: calc(28px + .1vw);
+				margin-right: calc(28px + .1vw);
+
+				background: linear-gradient(256.52deg, #293957 57.28%, rgba(24, 31, 47, 0) 126.96%);
+				border-radius: 4px;
+
+				.mentors__avatar {
+					width: 35%;
+					height: 249px;
+					object-fit: cover;
+				}
+
+				.mentors__slide-info {
+					width: 60%;
+				}
+
+				.mentors__slide-title {
+					@include text-style (600, calc(24px + .1vw), 28px, left, 0.15px, #ffffff);
+				}
+
+				.mentors__slide-subtitle {
+					@include text-style (400, calc(16px + .1vw), 19px, left, 0.15px, #61FFD9);
+
+					padding-top: 4px;
+					padding-bottom: 16px;
+				}
+
+				.mentors__slide-text {
+					@include text-style (400, calc(15px + .1vw), 22px, left, 0.15px, #DCDDE0);
+
+					display: flex;
+					flex-direction: column;
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+
+	.students {
+		max-width: 458px;
+		width: 40%;
+
+		&::before {
+			content: url(../img/main/about-us-bg.svg);
+	
+			position: absolute;
+			bottom: 73%;
+			right: 0;
+		}
+
+		&__title {
+			@include text-style (600, calc(52px + .1vw), 62px, left, 0.15px, #B2CCFF);
+
+			padding-left: calc(28px + .1vw);
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			max-width: 418px;
+			width: 80%;
+			height: 380px;
+			padding-top: 7em;
+			padding-left: 0;
+
+			list-style: none;
+		}
+
+		&__item-title {
+			@include text-style (400, calc(15px + .1vw), 22px, left, 0.15px, #ffffff);
+
+			opacity: 0.9;
+		}
+
+		&__item-title::before {
+			@include marker (#61FFD9);
+		}
+
+		&__item-text {
+			@include text-style (400, calc(13px + .1vw), 22px, left, 0.15px, #ffffff);
+
+			padding-left: .5em;
+
+			opacity: 0.7;
+		}
+	}
+}
+
+.course-description {
+	.benefits {
+
+		&__title {
+			@include text-style (600, calc(52px + .1vw), 62px, center, 0.15px, #B2CCFF);
+
+			padding-top: 101px;
+			padding-bottom: 48px;
+		}
+
+		&__cards {
+			position: relative;
+
+			display: flex;
+			justify-content: space-around;
+			padding-left: calc(28px + .1vw);
+		}
+
+		&__card {
+			max-width: 354px;
+			width: 31%;
+			height: 360px;
+			padding: 1.5em 2em .5em 1.2em;
+
+
+			background: linear-gradient(169.66deg, #293957 17.2%, rgba(24, 31, 47, 0) 124.89%);
+			border-radius: 4px;
+		}
+
+		&__card::before {
+		content: url(../img/main/benefits-bg.svg);
+	
+		position: absolute;
+		bottom: 90%;
+		left: 0;
+		}
+
+		.card__title {
+			@include text-style (600, calc(22px + .1vw), 29px, left, 0.15px, #ffffff);
+
+			padding-bottom: 32px;
+
+			opacity: 0.8;
+		}
+
+		.card__title--first-card {
+			padding-bottom: 8px;
+		}
+
+		.card__subtitle {
+			@include text-style (600, calc(14px + .1vw), 19px, left, 0.15px, #ffffff);
+
+			padding-top: 24px;
+			padding-bottom: 12px;
+
+			opacity: 0.7;
+		}
+
+		.card__list {
+			padding-left: 0;
+
+			list-style: none;
+		}
+
+		.card__item {
+			@include text-style (400, calc(14px + .1vw), 24px, left, 0.15px, #ffffff);
+
+			opacity: 0.6;
+		}
+
+		.card__item::before {
+			@include marker (#64B5F6);
+		}
+
+	}
+
+	.chat-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 88px;
+			padding-bottom: 32px;
+	
+			@include text-style (400, calc(20px + .1vw), 24px, left, 0.15px, #ffffff);
+	
+			opacity: 0.8;
+		}
+	
+		&__btn {
+			width: 210px;
+			height: 60px;
+			background: url(../img/main/telegram-btn.svg) no-repeat;
+			background-size: 210px 60px;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	.terms-box {
+		position: relative;
+		&__title {
+			@include text-style (600, calc(52px + .1vw), 62px, center, 0.15px, #B2CCFF);
+
+			padding-top: 101px;
+			padding-bottom: 48px;
+		}
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			max-width: 1271px;
+			width: 93%;
+			padding-left: calc(95px + .1vw);
+		}
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 517px;
+			width: 40%;
+			margin-top: 84px;
+		}
+
+		&__info::before {
+			content: url(../img/main/terms-box-bg.svg);
+	
+			position: absolute;
+			bottom: 47%;
+			left: 0;
+		}
+
+		&__text {
+			padding-bottom: 34px;
+		}
+
+		&__text h4 {
+			@include text-style (400, calc(32px + .1vw), 43px, center, 0.25px, #ffffff);
+
+			padding-bottom: 20px;
+		}
+
+		&__text p {
+			@include text-style (400, calc(22px + .1vw), 29px, center, 0.15px, #ffffff);
+
+			opacity: 0.9;
+		}
+
+		&__btn {
+			@include button-enroll;
+
+			@include sm {
+				padding: 1em 5.4em;
+			}
+	
+			@include xm {
+				padding: 1em 5.4em;
+			}
+		}
+
+		&__btn-program {
+			@include button-program;
+		}
+
+		&__media {
+			max-width: 683px;
+			width: 60%;
+		}
+
+		&__media-img {
+			width: 100%;
+			object-fit: cover;
+		}
+	
+		&__media-btn {
+			position: relative;
+			bottom: 50%;
+			left: 50%;
+			padding: 10px;
+			border: 0.5px solid #ECEAEA;
+			display: inline-block;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+	
+		&__media-play {
+			position: relative;
+			top: 1px;
+	
+			display: inline-block;
+			padding: 25px;
+	
+			text-align: center;
+			color: white;
+			
+			border: 2px solid #ECEAEA;
+			border-radius: 50%;
+			
+			cursor: pointer;
+	
+			&::after {
+				content: "";
+		
+				position: absolute;
+				right: 13px;
+				top: 15px;
+		
+				border-top: 10px solid transparent;
+				border-left: 20px solid #ECEAEA;
+				border-bottom: 10px solid transparent;
+			}
+		}	
+	}
+}
+
+.reviews {
+	position: relative;
+	
+
+	@include md {
+		.reviews {
+			padding-right: 0;
+		}
+
+		.reviews__sliders {
+			overflow: scroll;
+			padding: 0 0 0 24px;
+		}
+
+		.reviews__slide {
+			min-width: 306px;
+			width: 31%;
+			margin-right: 12px;
+			padding: 20px;
+		}
+
+		.reviews__arrow {
+			display: none;
+		}
+	}
+	
+	&__title {
+		@include text-style (600, calc(52px + .1vw), 62px, center, 0.15px, #B2CCFF);
+	
+		padding-top: 118px;
+		padding-bottom: 48px;
+	}
+
+	&__slider-amount {
+		@include text-style (400, calc(14px + .1vw), 19px, right, 0.15px, #61FFD9);
+
+		padding-right: 3%;
+		padding-bottom: 8px;
+	}
+
+	&__sliders {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 32px;
+	}
+
+	&__slide {
+		max-width: 390px;
+		width: 31%;
+		height: 242px;
+		padding: 24px 14px 14px 24px;
+		background: linear-gradient(244.65deg, #293957 58.88%, rgba(24, 31, 47, 0) 157.64%);
+		border-radius: 4px;
+	}
+
+	&__slide-title {
+		@include text-style (600, calc(22px + .1vw), 28px, left, 0.15px, #ffffff);
+
+		padding-bottom: 8px;
+	}
+
+	&__slide-box {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 24px;
+	}
+
+	&__slide-box p {
+		@include text-style (400, calc(14px + .1vw), 19px, left, 0.15px, #B2CCFF);
+	}
+
+	&__slide-text {
+		@include text-style (400, calc(14px + .1vw), 19px, left, 0.15px, #ffffff);
+
+		opacity: 0.7;
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 54%;
+		
+		cursor: pointer
+	}
+
+	&__arrow--left {
+		@include arrow (#BABCC1, $arrow-left);
+
+		left: 1%;
+	}
+
+	&__arrow--right {
+		@include arrow (#BABCC1, $arrow-right);
+
+		right: 1%;
+	}
+
+	&__question {
+		@include text-style (400, calc(18px + .1vw), 24px, left, 0.15px, #ffffff);
+
+		padding-top: 32px;
+		padding-bottom: 24px;
+		padding-left: calc(30px + .1vw);
+	}
+
+	&__btn {
+		width: 210px;
+		height: 60px;
+		padding-bottom: 92px;
+		margin-left: calc(30px + .1vw);
+		background: url(../img/main/reviews-btn.svg) no-repeat;
+		background-size: 210px 60px;
+		border: none;
+		cursor: pointer;
+	}
+}
+
+.questions {
+	padding: 0 32px;
+	position: relative;
+
+	&__title {
+		@include text-style (600, calc(52px + .1vw), 62px, center, 0.15px, #B2CCFF);
+
+		padding-bottom: 48px;
+	}
+
+	&__list {
+		padding-left: 0;
+		margin-bottom: 149px;
+	}
+
+	&__list::after {
+		content: url(../img/main/questions-bg.svg);
+	
+		position: absolute;
+		top: 7%;
+		right: .5%;
+	}
+
+	&__item {
+		position: relative;
+		max-width: 1302px;
+		padding: 16px 32px 0;
+		margin-bottom: 1em;
+		background: linear-gradient(91.01deg, #293957 42.2%, rgba(24, 31, 47, 0) 134.63%);
+		border-radius: 4px;
+		list-style: none;
+	}
+
+	&__box {
+		display: none;
+	}
+
+	&__box + label {
+		display: block;
+		padding-bottom: 15px;
+		@include text-style (500, 1em, 24px, left, 0.15px, #ffffff);
+	}
+
+	&__box + label::after {
+		position: absolute;
+		content: ""; 
+		@include arrow ( #B2CCFF, $arrow-bottom);
+		right: 32px;
+		cursor: pointer;
+	}
+
+	&__box + label + p {
+		display: none;
+		padding-bottom: 15px;
+	}
+
+	&__box:checked + label + p {
+		display: block;
+		padding-top: 15px;
+		@include text-style(400, 1em, 19px, left, 0.15px, #DCDDE0); 
+		border-top: 1px solid #FFFFFF;
+	}
+
+	&__box:checked + label::after {
+		position: absolute;
+		content: ""; 
+		@include arrow ( #B2CCFF, $arrow-top);
+		right: 32px;
+		cursor: pointer;
+	}
+}
+
+.enroll-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__subtitle {
+		@include text-style (300, calc(22px + .1vw), 29px, center, 0.25px, #ffffff);
+
+		opacity: 0.8;
+
+		margin-top: 22px;
+		margin-bottom: 56px;
+	}
+
+	&__btn {
+		@include button-enroll;
+
+		max-width: 428px;
+		margin: 0 0 164px 0;
+
+	}
+
+}
