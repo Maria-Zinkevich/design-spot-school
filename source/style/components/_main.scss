@@ -170,23 +170,27 @@
 			padding-left: calc(28px + .1vw);
 		}
 
+		&__cards::before {
+			content: url(../img/main/benefits-bg.svg);
+		
+			position: absolute;
+			bottom: 90%;
+			left: 0;
+			z-index: 1;
+			}
+
+
 		&__card {
+			z-index: 2;
+			
 			max-width: 354px;
 			width: 31%;
 			height: 360px;
 			padding: 1.5em 2em .5em 1.2em;
-
+			
 
 			background: linear-gradient(169.66deg, #293957 17.2%, rgba(24, 31, 47, 0) 124.89%);
 			border-radius: 4px;
-		}
-
-		&__card::before {
-		content: url(../img/main/benefits-bg.svg);
-	
-		position: absolute;
-		bottom: 90%;
-		left: 0;
 		}
 
 		.card__title {
